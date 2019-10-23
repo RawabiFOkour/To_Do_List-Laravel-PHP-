@@ -15,6 +15,8 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+
 Route::get('/dashbord', "TaskController@index_page");
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/create', "TaskController@create");
